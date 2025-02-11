@@ -11,7 +11,7 @@ body {
     padding: 1rem;
 }
 .card {
-  background-color: dodgerblue;
+  background-color: blue;
   color: white;
   padding: 1rem;
   height: 4rem;
@@ -22,7 +22,16 @@ body {
   display: grid;
   grid-gap: 1rem;
 }
-
+/* Screen larger than 600px */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat( 2, 1fr); 
+  } 
+}
+/* Screen larger than 900 pixels */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat( 3, 1fr); }
+}
 </style>
 </head>
 <body>
